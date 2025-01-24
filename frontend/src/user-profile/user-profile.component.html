@@ -57,7 +57,13 @@
     <p><strong>Department:</strong> {{ user.company?.department }}</p>
     <p><strong>Company Name:</strong> {{ user.company?.name }}</p>
     <p><strong>Title:</strong> {{ user.company?.title }}</p>
-    <!-- <p><strong>Company Address:</strong> {{ user.company?.companyAddress || 'Not Available' }}</p> -->
+    <p><strong>Company Address:</strong> {{ user.company?.address?.address }}</p>
+    <p><strong>City:</strong> {{ user.company?.address?.city }}</p>
+    <p><strong>State:</strong> {{ user.company?.address?.state }}</p>
+    <p><strong>Code:</strong> {{ user.company?.address?.stateCode }}</p>
+    <p><strong>PostalCode:</strong> {{ user.company?.address?.postalCode }}</p>
+    <p><strong>Latitude:</strong> {{ user.company?.address?.coordinates?.lat }}</p>
+    <p><strong>Longitude:</strong> {{ user.company?.address?.coordinates?.lng }}</p>
   </div>
 </div>
 
